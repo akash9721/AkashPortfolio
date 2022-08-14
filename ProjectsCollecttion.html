@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Projectcoll</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: rgb(152, 236, 251);
+        }
+        #parent
+        {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items:center;
+            
+           
+        }
+        #child
+        {
+            width: 40vw;
+            height: 70vh;
+            display: grid;
+            place-items: center;
+        
+        }
+        #child h1{
+            text-align: center;
+            padding: 5px;
+        }
+        #subchild{
+            margin-left: 30px;
+            width: 30vw;
+            height: 60vh;
+            
+            
+        }
+       /* button{
+           
+            width: 350px;
+            height: 50px;
+        }*/
+
+ .button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  width: 210px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    </style>
+</head>
+<body>
+    <div id="parent">
+        
+        <div id="child">  
+            <h1>Project Collection</h1>
+            <div id="subchild">
+                 <a href="advancedCALCULATOR.html" target="_blank"><button class=" button btn btn-outline-primary"><span>Calculator</span></button></a>
+                 <a href="bulbonoffProject.html" target="_blank"><button class="button btn btn-outline-secondary"><span>Bulb On Off</span></button></a>
+                 <a href="project1.html" target="_blank"><button class="button btn btn-outline-success"><span>Digital Clock</span></button></a>
+                 <a href="practice2.html" target="_blank"><button class="button btn btn-outline-info"><span>Conversion2</span></button></a>
+                 <a href="loveChallenge.html" target="_blank"><button class="button btn btn-outline-warning"><span>Love Challenge</span></button></a>
+                 <a href="Findage.html" target="_blank"><button class="button btn btn-outline-danger"><span>Find YourAge</span></button></a>
+                 <a href="Autoincresingscale.html" target="_blank"><button class="button btn btn-outline-primary"><span>Increasing 🌡</span></button></a>
+                 <a href="practice1.html"><button class="button btn btn-outline-primary"><span>Conversion1</span></button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

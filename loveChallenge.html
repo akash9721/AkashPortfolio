@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love challange</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .output{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container mt-5 mb-5 border border-danger bg-primary">
+        <h1 class="text-center mt-2 mb-5">Love Challange</h1>
+        <div class="row mt-4">
+            <div class=" offset-md-1 col-md-4 mb-5 mt-5">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <sapn class="input-group-text">Enter your Name</sapn>
+                    </div>
+                    <input type="text" class="form-control" id="name1">
+                </div>
+            </div>
+            <div class=" offset-md-1 col-md-4 mb-5 mt-5">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <sapn class="input-group-text">Enter your Partner Name</sapn>
+                    </div>
+                    <input type="text" class="form-control" id="name2">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md offset-md-5">
+                <button class="btn btn-success" onclick="find()">Check Your Bond</button>
+            </div>
+        </div>
+        <div class=" output row-md border mb-3 p-5 ">
+            <div class="col-md text-center" id="chk"></div>
+        </div>
+       
+    </div>
+    <script src="eventt.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>digital clock</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+             }
+             html,body
+             {
+                 height: 100%;
+                 display: grid;
+                 place-items: center;
+                 background: #000;
+             }
+             #one{
+                 height: 100px;
+                 width: 360px;
+                
+                 border-radius: 10px;
+                 background:linear-gradient(135deg,red,blue,cyan,yellow);
+                 animation: animate 1.5s linear infinite;
+                 
+             }
+             #one #two
+             {
+                 position: absolute;
+                 background: #1b1b1b;
+                 /* opacity: 0;*/
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%,-50%);
+                 height: 85px;
+                 width: 345px;
+                 text-align: center;
+                 border-radius: 6px;
+            }
+                 #one #two #three
+                 {
+                     line-height: 85px;
+                     font-size: 50px;
+                     color: white;
+                     font-weight: 600;
+                     letter-spacing: 1px;
+                     animation: animate 1.5s linear infinite;
+                 }
+                 @keyframes animate {
+                     100%{
+                         filter: hue-rotate(360deg);
+                     }
+                     
+                 }
+        </style>
+    </head>
+    <body>
+        <div id="one">
+            <div id="two">
+                <div id="three"></div>
+            </div>
+        </div>
+        <script>
+            function date()
+            {
+                var dd=new Date();
+                var a=dd.toLocaleTimeString();
+                document.getElementById("three").innerHTML=a;
+            }
+            var x=setInterval(date,1000);
+        </script>
+    </body>
+</html>

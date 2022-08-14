@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1#heading{
+              text-align: center;
+              margin-top: 80px;
+              padding: 10px;
+        }
+        h2{
+              text-align: center;
+              color: red;
+        }
+        #container{
+            width: 50%;
+            margin:10px auto 0px auto;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: cyan;
+        }
+        label{
+            padding: 5px;
+        }
+        #child{
+            display: inline-block;
+        }
+        .inpt{
+            padding: 5px 10px;
+            margin: 10px;
+            font-size: 30px;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Conversion</h1>
+    <h2> Decimal To Octal </h2>
+    <h2> Octal To Decimal </h2>
+    <div id="container">
+        <div id="child">
+            <label for="">Decimal</label><br>
+            <input type="number" id="decimal" value="0" class="inpt" placeholder="8">
+        </div>
+        <div id="child">
+            <h1>=</h1>
+        </div>
+        <div id="child">
+            <label for="">Octal</label><br>
+            <input type="number" id="octal" value="0" class="inpt" placeholder="10">
+        </div>
+    </div>
+    <script src="practice2.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find age</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .output{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container border mt-5 mb-5">
+        <h1 class="text-center mt-5 mb-4">Find Age</h1>
+        <div class="row">
+            <div class="col-lg-4 mb-5">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">DAY</span>
+                    </div>
+                    <input type="number" id="day" class="form-control" min="1" max="31">
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">MONTH</span>
+                    </div>
+                    <input type="number" id="month" class="form-control" min="1" max="12">
+                    <!-- <select name="" id="month" class="form-control">
+                         <option value="janruary">Janruary</option>
+                         <option value="February">Februry</option>
+                         <option value="March">March</option>
+                         <option value="April">April</option>
+                         <option value="May">May</option>
+                         <option value="June">June</option>
+                         <option value="July">July</option>
+                         <option value="August">August</option>
+                         <option value="September">September</option>
+                         <option value="October">October</option>
+                         <option value="November">November</option>
+                         <option value="December">December</option>
+                    </select>  -->
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">YEAR</span>
+                    </div>
+                    <input type="number" id="year" class="form-control" min="1800" max="2030">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2"> 
+            <div class="col-lg-3 offset-lg-5 mt-2 mb-2 ">
+                <button class="btn btn-success" onclick="dob()">click me</button>
+            </div>
+        </div>
+
+        <div class="row-md border p-5 mb-3" >
+            <div class="col-md text-center text-primary" id="op1"></div>
+            <div class="col-md text-center text-primary" id="op2"></div>
+            <div class="col-md text-center text-danger mt-3 mb-3" id="op3"></div>
+            <div class="col-md text-center text-success font-weight-bold" id="op4"></div>
+            <div class="col-md text-center text-info font-weight-bold" id="op5"></div>
+        </div>
+    </div>
+    
+    <script src="eventt.js"></script>
+</body>
+</html>
+
+
+
+
+
+

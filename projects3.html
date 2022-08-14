@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>project 3</title>
+        <style>
+          *{
+              margin: 0;
+              padding: 0;
+          }
+          html,body
+          {
+              height: 100%;
+              display: grid;
+              place-items: center;
+          }
+          #one
+          {
+              width: 600px;
+              height: 600px;
+              background: burlywood;
+          }
+          #one #two
+          {
+            width: 500px;
+              height: 500px;
+              background: rgb(135, 216, 222);
+              position: relative;
+              margin: 0 auto;
+              top: 50px;
+           }
+           #one #two #thr{
+               position: relative;
+               border-radius: 50%;
+               top: 15px;
+               left: 15px;
+               float: left;
+               width: 235px;
+               height: 235px;
+               background-image: radial-gradient(circle,red,orange,pink,purple);
+               animation: animate 1.5s linear infinite;
+                }
+                #one #two #fo{
+                    position: relative;
+                    border-radius: 50%;
+               top: 15px;
+               left: 15px;
+               float: left;
+               width: 235px;
+               height: 235px;
+               background-image: linear-gradient(45deg,red,green,yellow,red);
+               animation: animate 1.5s linear infinite;
+                }
+                #one #two #fi{
+                    position: relative;
+                    border-radius: 50%;
+               top: 15px;
+               left: 15px;
+               float: left;
+               width: 235px;
+               height: 235px;
+               background-image: linear-gradient(90deg,red,green,yellow,blue,red);
+               animation: animate 1.5s linear infinite;
+                }
+                #one #two #si{
+                    position: relative;
+                    border-radius: 50%;
+               top: 15px;
+               left: 15px;
+               float: left;
+               width: 235px;
+               height: 235px;
+               background-image: radial-gradient(circle,red,green,cyan,red);
+               animation: animate 1.5s linear infinite;
+                }
+                @keyframes animate {
+                    100%{
+                        filter: hue-rotate(180deg);
+                    }
+                    
+                }
+               
+        </style>
+    </head>
+    <body>
+       <div id="one">
+           <div id="two">
+               <div id="thr"></div>
+               <div id="fo"></div>
+               <div id="fi"></div>
+               <div id="si"></div>
+
+           </div>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background: #000;">
+    <div class="container mt-5 "></div>
+    <div class="container  mt-3">
+        <h1 class="text-center text-white">Cany You Turn The Light On?</h1>
+        <div class="row  text-center">
+            <div class="col  p-5">
+                <img src="C:\Users\akash kumar\Desktop\MyWebsite\Pictures\offlamp.png" alt="" id="img" width="300" height="300">
+            </div>
+        </div>
+        <div class="row ">
+            <div class="offset-3 col-3">
+                <button class="btn btn-success" id="open">Turn On</button>
+            </div>
+            <div class="offset-1 col-5">
+                <button class="btn btn-primary ml-5" id="off">Turn Off</button>
+            </div>
+        </div>
+    </div>
+    <script>
+       document.getElementById('open').addEventListener('click',()=>{
+        document.getElementById('img').src="C:/Users/akash kumar/Desktop/MyWebsite/Pictures/onlamp.png";
+       })
+       document.getElementById('off').addEventListener('click',()=>{
+        document.getElementById('img').src="C:/Users/akash kumar/Desktop/MyWebsite/Pictures/offlamp.png";
+       })
+       document.getElementsByTagNameNS("body").style.background="black";
+    </script>
+</body>
+</html>
